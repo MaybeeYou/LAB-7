@@ -22,8 +22,8 @@ void Ball::update(float deltaTime) {
 void Ball::draw(sf::RenderWindow& window) const {
 	sf::CircleShape circle(radius);
 	circle.setFillColor(sf::Color::White);
-	circle.setOrigin(radius, radius);
-	circle.setPosition(x, y);
+	circle.setOrigin({radius, radius});
+	circle.setPosition({x, y});
 	window.draw(circle);
 }
 
