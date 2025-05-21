@@ -52,3 +52,54 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 
 }
 
+#include "Objects.h"
+
+Cloker::Cloker()
+    : size(14), x(0), y(0), left(0), right(0), limit(12) {
+    label = tgui::Label::create();
+    label->setText("0 : 0");
+}
+
+void Cloker::setPosition(int x_, int y_) {
+    x = x_;
+    y = y_;
+    label->setPosition(x, y);
+}
+
+void Cloker::setTextSize(int s) {
+    size = s;
+    label->setTextSize(size);
+}
+
+void Cloker::plusLeft() {
+    if (left < limit) {
+        ++left;
+        updateText();
+    }
+}
+
+void Cloker::plusRight() {
+    if (right < limit) {
+        ++right;
+        updateText();
+    }
+}
+
+void Cloker::reset() {
+    left = right = 0;
+    updateText();
+}
+
+void Cloker::setLimit(unsigned int lim) {
+    limit = lim;
+}
+
+void Cloker::draw(tgui::Gui& gui) const {
+    gui.add(label);
+}
+
+void Cloker::updateText() {
+    label->setText(std::to_string(left) + " : " + std::to_string(right));
+}
+
+
