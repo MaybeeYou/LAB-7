@@ -52,6 +52,39 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 
 }
 
+//ROKETKA
+Paddle::Paddle() : x(0), y(0), width(15), height(100), speed(0) {}
+
+Paddle::Paddle(float startX, float startY) : x(startX), y(startY), width(15), height(100), speed(400.f) {}
+
+void Paddle::reset(float startX, float startY) {
+	x = startX;
+	y = startY;
+	speed = 0;
+}
+void Paddle::update(float deltaTime) {
+	y += deltaTime;
+	if (y < 0) y = 0;
+	if (y + height > HEIGHT_DISPLAY) y = HEIGHT_DISPLAY - height;
+}
+void Paddle::Move(float dy) {
+	y += dy;
+	if (y < 0) y = 0;
+	if (y + height > HEIGHT_DISPLAY) y = HEIGHT_DISPLAY - height;
+}
+
+void Paddle::draw(sf::RenderWindow& window) const {
+	sf::RectangleShape rect(sf::Vector2f(width, height));
+	rect.setPosition(x, y);
+	rect.setFillColor(sf::Color::White);
+	window.draw(rect);
+}
+
+sf::FloatRect Paddle::getBounds() const {
+	return sf::FloatRect(x, y, width, height);
+}
+
+//S4ET4IK
 Cloker::Cloker()
     : size(14), x(0), y(0), left(0), right(0), limit(12) {
     label = tgui::Label::create();
