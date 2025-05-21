@@ -52,8 +52,6 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 
 }
 
-#include "Objects.h"
-
 Cloker::Cloker()
     : size(14), x(0), y(0), left(0), right(0), limit(12) {
     label = tgui::Label::create();
