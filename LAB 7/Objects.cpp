@@ -51,11 +51,11 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 
 }
 
-<<<<<<< HEAD
 //ROKETKA
 Paddle::Paddle() : x(0), y(0), width(15), height(100), speed(0) {}
 
-Paddle::Paddle(float startX, float startY) : x(startX), y(startY), width(15), height(100), speed(400.f) {}
+Paddle::Paddle(float startX, float startY) : 
+    x(startX), y(startY), width(15), height(100), speed(400.f) {}
 
 void Paddle::reset(float startX, float startY) {
 	x = startX;
@@ -84,10 +84,6 @@ sf::FloatRect Paddle::getBounds() const {
 	return sf::FloatRect(x, y, width, height);
 }
 
-//S4ET4IK
-=======
-
->>>>>>> 30747ca (123)
 Cloker::Cloker()
     : size(14), x(0), y(0), left(0), right(0), limit(12) {
     label = tgui::Label::create();
