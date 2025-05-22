@@ -26,7 +26,7 @@ void Ball::draw(sf::RenderWindow& window) const {
 	window.draw(circle);
 }
 
-void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowHeight, float windowWidth ,int& leftScore, int& rightScore) {
+void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowHeight, float windowWidth, Clocker clock) {
 	if (y - radius < 0) {
 		y = radius;
 		vy = -vy;
@@ -38,28 +38,16 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 	}
 
 	if (x - radius < 0) {
-		rightScore++;
+		clock.plusRight()
 		reset(windowWidth / 2, windowHeight / 2);
 		return;
 	}
 
 	if (x + radius > windowWidth) {
-		leftScore++;
+		clock.plusLeft()
 		reset(windowWidth / 2, windowHeight / 2);
 		return;
 	}
-
-	 if (x - radius < 0) {
-        rightScore++;
-        reset(windowWidth / 2, windowHeight / 2);
-        return;
-    }
-	
-    if (x + radius > windowWidth) {
-        leftScore++;
-        reset(windowWidth / 2, windowHeight / 2);
-        return;
-    }
 
     if (vx < 0 && x - radius <= left.x + left.width / 2) {
         if (std::abs(y - left.y) <= left.height / 2) {
