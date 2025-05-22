@@ -119,18 +119,33 @@ void Ball::checkCollision(const Paddle &left, const Paddle &right,
         return;
     }
 
-    if (vx < 0 && x - radius <= left.x + left.width / 2) {
-        if (std::abs(y - left.y) <= left.height / 2) {
-            x = left.x + left.width / 2 + radius;
-            vx = -vx;
-        }
+    if (vx < 0 && 
+        x - radius <= left.x + left.width && 
+        x - radius >= left.x &&
+        y + radius >= left.y && 
+        y - radius <= left.y + left.height) 
+    {
+        x = left.x + left.width + radius;
+        vx = -vx;
+        
+        // Изменение угла отскока
+        float hitPosition = (y - left.y) / left.height;
+        vy = hitPosition * 500.f;
     }
 
-    if (vx > 0 && x + radius >= right.x - right.width / 2) {
-        if (std::abs(y - right.y) <= right.height / 2) {
-            x = right.x - right.width / 2 - radius;
-            vx = -vx;
-        }
+    // Столкновение с правой ракеткой
+    if (vx > 0 && 
+        x + radius >= right.x && 
+        x + radius <= right.x + right.width &&
+        y + radius >= right.y && 
+        y - radius <= right.y + right.height) 
+    {
+        x = right.x - radius;
+        vx = -vx;
+        
+        // Изменение угла отскока
+        float hitPosition = (y - right.y) / right.height;
+        vy = hitPosition * 500.f;
     }
 }
 
@@ -147,11 +162,11 @@ void Paddle::reset(float startX, float startY)
 }
 void Paddle::update(float deltaTime)
 {
-	y += deltaTime;
-	if (y < 0)
-		y = 0;
-	if (y + height > HEIGHT_DISPLAY)
-		y = HEIGHT_DISPLAY - height;
+    y += speed * deltaTime;
+    if (y < 0)
+        y = 0;
+    if (y + height > HEIGHT_DISPLAY)
+        y = HEIGHT_DISPLAY - height;
 }
 void Paddle::Move(float dy)
 {
