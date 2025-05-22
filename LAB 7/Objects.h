@@ -9,6 +9,7 @@ class Paddle {
 private:
   float x, y;
   float width, height;
+<<<<<<< HEAD
 
 public:
   float speed;
@@ -18,6 +19,17 @@ public:
   void draw(sf::RenderWindow& window) const;
   void reset(float startX, float startY);
   void Move(float dy);
+=======
+  float vy;
+
+public:
+  Paddle();
+  Paddle(float startX, float startY);
+  void update(float deltaTime);
+  void draw(sf::RenderWindow &window) const;
+  void reset(float startX, float startY);
+
+>>>>>>> 30747ca (123)
   sf::FloatRect getBounds() const;
 };
 class Ball {

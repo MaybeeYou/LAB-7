@@ -1,5 +1,4 @@
 #include "Objects.h"
-
 Ball::Ball(float startX, float StartY) {
 	radius = 10.f;
 	reset(startX, StartY);
@@ -52,6 +51,7 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 
 }
 
+<<<<<<< HEAD
 //ROKETKA
 Paddle::Paddle() : x(0), y(0), width(15), height(100), speed(0) {}
 
@@ -85,6 +85,9 @@ sf::FloatRect Paddle::getBounds() const {
 }
 
 //S4ET4IK
+=======
+
+>>>>>>> 30747ca (123)
 Cloker::Cloker()
     : size(14), x(0), y(0), left(0), right(0), limit(12) {
     label = tgui::Label::create();
