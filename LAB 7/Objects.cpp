@@ -4,7 +4,14 @@ Cloker::Cloker()
 	: size(14), x(0), y(0), left(0), right(0), limit(12)
 {
 	label = tgui::Label::create();
-	label->setText("0   0");
+	label->setText("0 : 0");
+}
+
+void Cloker::setPosition(int x_, int y_)
+{
+	x = x_;
+	y = y_;
+	label->setPosition(x, y);
 }
 
 void Cloker::setTextSize(int s)
@@ -48,16 +55,10 @@ void Cloker::setLimit(unsigned int lim)
 	limit = lim;
 }
 
-void Cloker::setPosition(int x_, int y_) {
-    x = x_;
-    y = y_;
-    label->setPosition(x - label->getSize().x / 2, y - label->getSize().y / 2); // центрировать
+void Cloker::draw(tgui::Gui &gui) const
+{
+	gui.add(label);
 }
-
-void Cloker::draw(tgui::Gui& gui) const {
-    gui.add(label);
-}
-
 
 void Cloker::updateText()
 {

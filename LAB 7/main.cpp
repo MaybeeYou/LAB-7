@@ -10,19 +10,12 @@ int main() {
     Paddle leftPaddle(50, HEIGHT_DISPLAY / 2 - 50);
     Paddle rightPaddle(WIDTH_DISPLAY - 70, HEIGHT_DISPLAY / 2 - 50);
     Ball ball(WIDTH_DISPLAY / 2, HEIGHT_DISPLAY / 2);
+    
+    // Изменено позиционирование счетчика - теперь он над центральной линией
     Cloker clock;
-    clock.setPosition(WIDTH_DISPLAY / 2 - 50, HEIGHT_DISPLAY / 2);
+    clock.setPosition(WIDTH_DISPLAY / 2 - 50, 20);  // 20 пикселей от верхнего края
     clock.setTextSize(40);
     clock.draw(gui);
-
-    // auto button = tgui::Button::create();
-    // button->setPosition(10, 10);
-    // button->setSize(100, 50);
-    // button->setText("Click me!");
-    // button->onClick([&]() {
-    //     std::cout << "Button clicked!" << std::endl;
-    // });
-    // gui.add(button);
 
     sf::Clock gameClock;
 
@@ -50,16 +43,21 @@ int main() {
         leftPaddle.update(deltaTime);
         rightPaddle.update(deltaTime);
 
-        int leftScore = 0, rightScore = 0;
         ball.checkCollision(leftPaddle, rightPaddle, HEIGHT_DISPLAY, WIDTH_DISPLAY, clock);
 
         window.clear(sf::Color::Black);
 
-        // Центральная линия
+        // Центральная линия (пунктирная)
         sf::RectangleShape line(sf::Vector2f(2, HEIGHT_DISPLAY));
         line.setPosition(WIDTH_DISPLAY / 2, 0);
         line.setFillColor(sf::Color(100, 100, 100));
-        window.draw(line);
+        
+        // Делаем линию пунктирной
+        for (int i = 0; i < HEIGHT_DISPLAY; i += 20) {
+            line.setPosition(WIDTH_DISPLAY / 2, i);
+            line.setSize(sf::Vector2f(2, 10));  // 10px длина каждого отрезка
+            window.draw(line);
+        }
 
         leftPaddle.draw(window);
         rightPaddle.draw(window);
