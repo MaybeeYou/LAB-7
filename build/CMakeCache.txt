@@ -231,7 +231,7 @@ SFML_DIR:PATH=/nix/store/zici54afc1rwy0ca3p7d6qg03idm9g8f-sfml-2.6.2/lib/cmake/S
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for TGUI.
-TGUI_DIR:PATH=TGUI_DIR-NOTFOUND
+TGUI_DIR:PATH=/nix/store/5gy06icmhiqqpd9bcpjygarmha65rhyn-tgui-1.9.0/lib/cmake/TGUI
 
 
 ########################

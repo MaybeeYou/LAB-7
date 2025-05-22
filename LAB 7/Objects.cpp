@@ -1,4 +1,6 @@
 #include "Objects.h"
+const int WIDTH_DISPLAY = 1280;
+const int HEIGHT_DISPLAY = 720;
 Ball::Ball(float startX, float StartY) {
 	radius = 10.f;
 	reset(startX, StartY);

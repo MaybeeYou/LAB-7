@@ -18,14 +18,14 @@ int main() {
     clock.setTextSize(40);
     clock.draw(gui);
 
-    auto button = tgui::Button::create();
-    button->setPosition(10, 10);
-    button->setSize(100, 50);
-    button->setText("Click me!");
-    button->onClick([&]() {
-        std::cout << "Button clicked!" << std::endl;
-    });
-    gui.add(button);
+    // auto button = tgui::Button::create();
+    // button->setPosition(10, 10);
+    // button->setSize(100, 50);
+    // button->setText("Click me!");
+    // button->onClick([&]() {
+    //     std::cout << "Button clicked!" << std::endl;
+    // });
+    // gui.add(button);
 
     sf::Clock gameClock;
 

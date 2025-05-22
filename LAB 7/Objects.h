@@ -7,6 +7,8 @@
 #include <string>
 #include <memory>
 
+
+
 class Paddle {
 private:
     float x, y;
