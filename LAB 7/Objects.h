@@ -14,22 +14,24 @@ class Cloker {
 private:
     int size;
     int x, y;
-    int left, right;
-    int limit;
+    bool lose = false;
     std::shared_ptr<tgui::Label> label;
-
+    tgui::Gui* gui = nullptr;
     void updateText();
+    void showGameOver(const std::string& message);
 
 public:
+    bool gameOver = false;
     Cloker();
-
+    int left, right;
+    int limit;
     void setPosition(int x_, int y_);
     void setTextSize(int s);
     void plusLeft();
     void plusRight();
     void reset();
     void setLimit(unsigned int lim);
-    void draw(tgui::Gui& gui) const;
+    void draw(tgui::Gui& gui);
 };
 class Paddle {
 public:
@@ -49,6 +51,7 @@ public:
   float x, y;
   float radius;
   float vx, vy;
+  bool active = true;
 
   Ball(float startX, float startY);
   void setPosition(float deltaTime);

@@ -15,6 +15,7 @@ int main() {
     Cloker clock;
     clock.setPosition(WIDTH_DISPLAY / 2 - 50, 20);  // 20 пикселей от верхнего края
     clock.setTextSize(40);
+    //clock.setLimit(2);
     clock.draw(gui);
 
     sf::Clock gameClock;
@@ -40,11 +41,14 @@ int main() {
             rightPaddle.Move(rightPaddle.speed * deltaTime);
 
         ball.update(deltaTime);
-        leftPaddle.update(deltaTime);
-        rightPaddle.update(deltaTime);
-
         ball.checkCollision(leftPaddle, rightPaddle, HEIGHT_DISPLAY, WIDTH_DISPLAY, clock);
 
+        if (clock.gameOver) {
+            ball.active = false;
+        } else if (!ball.active) {
+            ball.active = true;
+            ball.reset(WIDTH_DISPLAY / 2, HEIGHT_DISPLAY / 2);
+        }
         window.clear(sf::Color::Black);
 
         // Центральная линия (пунктирная)
