@@ -4,14 +4,7 @@ Cloker::Cloker()
 	: size(14), x(0), y(0), left(0), right(0), limit(12)
 {
 	label = tgui::Label::create();
-	label->setText("0 : 0");
-}
-
-void Cloker::setPosition(int x_, int y_)
-{
-	x = x_;
-	y = y_;
-	label->setPosition(x, y);
+	label->setText("0   0");
 }
 
 void Cloker::setTextSize(int s)
@@ -27,14 +20,20 @@ void Cloker::plusLeft()
 		++left;
 		updateText();
 	}
+	else {
+		reset();
+	}
 }
 
 void Cloker::plusRight()
 {
-	if (right < limit)
+	if (right <= limit)
 	{
 		++right;
 		updateText();
+	}
+	else {
+		reset();
 	}
 }
 
@@ -49,17 +48,23 @@ void Cloker::setLimit(unsigned int lim)
 	limit = lim;
 }
 
-void Cloker::draw(tgui::Gui &gui) const
-{
-	gui.add(label);
+void Cloker::setPosition(int x_, int y_) {
+    x = x_;
+    y = y_;
+    label->setPosition(x - label->getSize().x / 2, y - label->getSize().y / 2); // центрировать
 }
+
+void Cloker::draw(tgui::Gui& gui) const {
+    gui.add(label);
+}
+
 
 void Cloker::updateText()
 {
-	label->setText(std::to_string(left) + " : " + std::to_string(right));
+	label->setText(std::to_string(left) + "   " + std::to_string(right));
 }
 Ball::Ball(float startX, float startY)
-{ // Исправлено StartY -> startY
+{
 	radius = 10.f;
 	reset(startX, startY);
 }

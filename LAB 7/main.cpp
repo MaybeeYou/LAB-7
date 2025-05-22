@@ -11,7 +11,7 @@ int main() {
     Paddle rightPaddle(WIDTH_DISPLAY - 70, HEIGHT_DISPLAY / 2 - 50);
     Ball ball(WIDTH_DISPLAY / 2, HEIGHT_DISPLAY / 2);
     Cloker clock;
-    clock.setPosition(WIDTH_DISPLAY / 2 - 50, HEIGHT_DISPLAY / 2 - 20);
+    clock.setPosition(WIDTH_DISPLAY / 2 - 50, HEIGHT_DISPLAY / 2);
     clock.setTextSize(40);
     clock.draw(gui);
 
