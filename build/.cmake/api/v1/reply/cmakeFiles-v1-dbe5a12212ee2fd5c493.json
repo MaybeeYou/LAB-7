@@ -1,0 +1,267 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.31.6/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.31.6/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Linker/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/jzd366x5mm9j9bx5yc4h4d4flmb25mnv-sfml-2.6.2/lib/cmake/SFML/SFMLConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/jzd366x5mm9j9bx5yc4h4d4flmb25mnv-sfml-2.6.2/lib/cmake/SFML/SFMLConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/jzd366x5mm9j9bx5yc4h4d4flmb25mnv-sfml-2.6.2/lib/cmake/SFML/SFMLSharedTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/jzd366x5mm9j9bx5yc4h4d4flmb25mnv-sfml-2.6.2/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/jzd366x5mm9j9bx5yc4h4d4flmb25mnv-sfml-2.6.2/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/ilrqz505fw5z0v08x2vxyncbb3flfy3g-tgui-1.9.0/lib/cmake/TGUI/TGUIConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/ilrqz505fw5z0v08x2vxyncbb3flfy3g-tgui-1.9.0/lib/cmake/TGUI/TGUIConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/nix/store/np45wjc61sy6d021dnrgyizga8f859k5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/ilrqz505fw5z0v08x2vxyncbb3flfy3g-tgui-1.9.0/lib/cmake/TGUI/TGUISharedTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/nix/store/ilrqz505fw5z0v08x2vxyncbb3flfy3g-tgui-1.9.0/lib/cmake/TGUI/TGUISharedTargets-release.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/ivan/LAB-7/build",
+		"source" : "/home/ivan/LAB-7"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

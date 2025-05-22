@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/ivan/LAB-7/build",
+  "command": "/run/current-system/sw/bin/clang++ -DTGUI_DYNAMIC -g -o CMakeFiles/app.dir/LAB_7/main.cpp.o -c \"/home/ivan/LAB-7/LAB 7/main.cpp\"",
+  "file": "/home/ivan/LAB-7/LAB 7/main.cpp",
+  "output": "CMakeFiles/app.dir/LAB_7/main.cpp.o"
+},
+{
+  "directory": "/home/ivan/LAB-7/build",
+  "command": "/run/current-system/sw/bin/clang++ -DTGUI_DYNAMIC -g -o CMakeFiles/app.dir/LAB_7/Objects.cpp.o -c \"/home/ivan/LAB-7/LAB 7/Objects.cpp\"",
+  "file": "/home/ivan/LAB-7/LAB 7/Objects.cpp",
+  "output": "CMakeFiles/app.dir/LAB_7/Objects.cpp.o"
+}
+]
