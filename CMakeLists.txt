@@ -7,7 +7,7 @@ set(SFML_STATIC_LIBRARIES OFF)
 find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
 find_package(TGUI REQUIRED)
 
-add_executable(app src/main.cc src/gui.cc)
+add_executable(app src/main.cpp src/Objects.cpp)
 target_link_libraries(app PRIVATE
     sfml-graphics
     sfml-window
