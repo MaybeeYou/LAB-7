@@ -7,39 +7,8 @@
 #include <string>
 #include <memory>
 
-
-
-class Paddle {
-private:
-    float x, y;
-    float width, height;
-public:
-    float speed;
-  Paddle();
-  Paddle(float startX, float startY);
-  void update(float deltaTime);
-  void draw(sf::RenderWindow& window) const;
-  void reset(float startX, float startY);
-  void Move(float dy);
-  sf::FloatRect getBounds() const;
-};
-class Ball {
-public:
-  float x, y;
-  float radius;
-  float vx, vy;
-
-  Ball(float startX, float startY);
-  void setPosition(float deltaTime);
-  void update(float deltaTime);
-  void draw(sf::RenderWindow &window) const;
-  void reset(float startX, float startY);
-  void checkCollision(const Paddle &left, const Paddle &right,
-                      float windowHeight, float windowWidth, int &leftScore,
-                      int &rightScore);
-
-  sf::FloatRect getBounds() const;
-};
+const int WIDTH_DISPLAY = 1280;
+const int HEIGHT_DISPLAY = 720;
 
 class Cloker {
 private:
@@ -61,5 +30,35 @@ public:
     void reset();
     void setLimit(unsigned int lim);
     void draw(tgui::Gui& gui) const;
+};
+class Paddle {
+public:
+    float x, y;
+    float width, height;
+    float speed;
+  Paddle();
+  Paddle(float startX, float startY);
+  void update(float deltaTime);
+  void draw(sf::RenderWindow& window) const;
+  void reset(float startX, float startY);
+  void Move(float dy);
+  sf::FloatRect getBounds() const;
+};
+class Ball {
+public:
+  float x, y;
+  float radius;
+  float vx, vy;
+
+  Ball(float startX, float startY);
+  void setPosition(float deltaTime);
+  void update(float deltaTime);
+  void draw(sf::RenderWindow &window) const;
+  void reset(float startX, float startY);
+  void checkCollision(const Paddle& left, const Paddle& right,
+                         float windowHeight, float windowWidth,
+                         Cloker& clock);
+
+  sf::FloatRect getBounds() const;
 };
 

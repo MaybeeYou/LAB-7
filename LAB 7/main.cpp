@@ -3,9 +3,6 @@
 #include <TGUI/TGUI.hpp>
 #include "Objects.h"
 
-const int WIDTH_DISPLAY = 1280;
-const int HEIGHT_DISPLAY = 720;
-
 int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH_DISPLAY, HEIGHT_DISPLAY), "Pin-Pong");
     tgui::Gui gui(window);
@@ -54,10 +51,7 @@ int main() {
         rightPaddle.update(deltaTime);
 
         int leftScore = 0, rightScore = 0;
-        ball.checkCollision(leftPaddle, rightPaddle, HEIGHT_DISPLAY, WIDTH_DISPLAY, leftScore, rightScore);
-
-        if (leftScore > 0) clock.plusLeft();
-        if (rightScore > 0) clock.plusRight();
+        ball.checkCollision(leftPaddle, rightPaddle, HEIGHT_DISPLAY, WIDTH_DISPLAY, clock);
 
         window.clear(sf::Color::Black);
 
