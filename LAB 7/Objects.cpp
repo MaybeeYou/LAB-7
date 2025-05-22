@@ -49,6 +49,32 @@ void Ball::checkCollision(const Paddle& left, const Paddle& right, float windowH
 		return;
 	}
 
+	 if (x - radius < 0) {
+        rightScore++;
+        reset(windowWidth / 2, windowHeight / 2);
+        return;
+    }
+	
+    if (x + radius > windowWidth) {
+        leftScore++;
+        reset(windowWidth / 2, windowHeight / 2);
+        return;
+    }
+
+    if (vx < 0 && x - radius <= left.x + left.width / 2) {
+        if (std::abs(y - left.y) <= left.height / 2) {
+            x = left.x + left.width / 2 + radius;
+            vx = -vx;
+        }
+    }
+
+    if (vx > 0 && x + radius >= right.x - right.width / 2) {
+        if (std::abs(y - right.y) <= right.height / 2) {
+            x = right.x - right.width / 2 - radius;
+            vx = -vx;
+        }
+    }
+
 }
 
 //ROKETKA
